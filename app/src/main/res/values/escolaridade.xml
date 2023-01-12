@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string-array name="escolaridade">
+            <item>Ensino Fundamental</item>
+            <item>Ensino Médio</item>
+            <item>Graduação</item>
+            <item>MBA / Especialização</item>
+            <item>Mestrado</item>
+            <item>Doutorado</item>
+            <item>Pós-Doutorado</item>
+        </string-array>
+</resources>

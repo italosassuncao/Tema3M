@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/barraTarefas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/white"
+            android:background="@color/design_default_color_primary"
+            android:minHeight="?attr/actionBarSize"
+            app:title="UNICID"
+            app:navigationIcon="@android:drawable/ic_menu_mapmode" />
+
+
+        <Button
+            android:id="@+id/btnTestar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Testar" />
+
+        <Spinner
+            android:id="@+id/spnEscolaridade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/ckCambioAutomatico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Cambio Automático" />
+
+        <CheckBox
+            android:id="@+id/ckTetoSolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teto Solar" />
+
+        <RadioGroup
+            android:id="@+id/rgbEstadoCivil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/rbSolteiro"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Solteiro(a)" />
+
+            <RadioButton
+                android:id="@+id/rbCasado"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Casado(a)" />
+
+            <RadioButton
+                android:id="@+id/rbSeparado"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Separado(a)" />
+
+            <RadioButton
+                android:id="@+id/rbDivorciado"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Divorciado(a)" />
+
+            <RadioButton
+                android:id="@+id/rbViuvo"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Viúvo(a)" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/fontes"
+            android:id="@+id/txtEstilo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Olá" />
+
+        <TextView
+            android:id="@+id/txtVermelho"
+            style="@style/fonteVermelha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hello" />
+
+        <EditText
+            android:id="@+id/edtNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+</ScrollView>
